@@ -1,6 +1,6 @@
         @extends('layouts.app')
         @section('content')
-        <div class="my-image-div" style="position: relative;">
+        <div class="my-image-div">
             <img src="img/chat-benefits.png" alt="header" style="width:100%" class="my-div-image">
             <div class="w3-display-topleft w3-container w3-text-white w3-padding-64 w3-hide-small">
                 <h3>ChatApp</h3>
@@ -10,23 +10,17 @@
         <div class="container w3-container">
             <div class="w3-container">
                 <h2>Top Reviews</h2>
-                <div>               
-                    <img src="img/me.jpg" class="w3-circle" style="width: 50px;height:50px" alt="name">
+                <div class="w3-container w3-card w3-margin-top">               
+                    <img src="img/me.jpg" class="w3-circle w3-margin" style="width: 50px;height:50px" alt="name">
                     <b>Magical Messi</b>
-                    <div class="w3-card-4 card w3-margin  font-italic my-self" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                    I have been using this app and it has been very good to me 
-                    <div class="w3-display-bottomright">
-                        1 year ago
-                    </div>
+                    <div class=" w3-margin font-italic my-self" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                        <span style="color:#0078ff;">&#10077;</span> I have been using this app and it has been very good to me  <span style="color:#0078ff;">&#10078;</span>
                 </div>
                 </div>
-                <div>
-                    <img src="img/me.jpg" class="w3-circle" style="width: 50px;height:50px"> <b>John Doe</b>
-                    <div class="w3-card-4 card w3-margin  font-italic my-self" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                    Wonderful Application, Superb
-                    <div class="w3-display-bottomright">
-                        25 days ago
-                    </div>
+                <div class="w3-container w3-card w3-margin-top">
+                    <img src="img/me.jpg" class="w3-circle w3-margin" style="width: 50px;height:50px"> <b>John Doe</b>
+                    <div class="w3-margin  font-italic my-self" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                        <span style="color:#0078ff;">&#10077;</span> Wonderful Application, Superb <span style="color:#0078ff;">&#10078;</span>
                 </div>
                 </div>
                 
@@ -34,7 +28,7 @@
             </div><br>
             <div class="container w3-container">
                 <h2>My Skills</h2>
-                <div class="w3-row-padding">
+                <div class="w3-row">
                     <!-- <div class="row"> -->
                     <div class="card w3-card w3-hover-blue w3-round-medium w3-third">
                         <h2 class="text-center">React</h2>
@@ -58,7 +52,6 @@
                 </div>
             </div>
         </div>
-    </main>
 @endsection
 @section('footer')
 @include('includes.footer')

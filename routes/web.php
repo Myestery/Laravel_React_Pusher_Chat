@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/username',function(){
+    if(Auth::check()){
+         return [
+             "username" => Auth::user()->name ,
+             "csrf" => csrf_token()
+         ];
+    }
+   return null;
+});
