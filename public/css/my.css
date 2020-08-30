@@ -1,0 +1,68 @@
+/* html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin-bottom: 800px;
+} */
+
+.my-div-image {
+    width: 100%;
+}
+
+.my-image-div {
+    margin-bottom: 100px;
+}
+
+.my-flex-group {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.img-in-card {
+    width: 50%;
+    height: 250px;
+    margin-left: 80px;
+}
+
+.react {
+    margin-left: 50px;
+    width: 70%;
+}
+
+.flexed-card {
+    height: 350px;
+    text-align: center;
+}
+
+.flexed-card:hover {
+    width: 2000px;
+}
+
+.my-self {
+    padding: 5px;
+}
+
+@media (max-width: 900px) {
+    .flexed-card {
+        height: 350px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+main{
+  min-height: 100%;
+  margin-bottom: 10%;
+}
+main::after{
+  content:"";
+  display: block;
+}
+footer, main::after{
+  /* height: 100%; */
+  bottom:0;
+}
